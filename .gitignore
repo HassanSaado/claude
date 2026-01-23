@@ -1,0 +1,25 @@
+# Ignore sensitive files if accidentally copied here
+.credentials.json
+*.local.json
+
+# Ignore cache and runtime data
+cache/
+debug/
+file-history/
+history.jsonl
+ide/
+paste-cache/
+plans/
+projects/
+session-env/
+shell-snapshots/
+stats-cache.json
+statsig/
+telemetry/
+todos/
+plugins/
+
+# OS files
+.DS_Store
+*.swp
+*~
