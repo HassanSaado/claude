@@ -13,6 +13,8 @@ The user wants to implement: $ARGUMENTS
 
 ## Interview Process
 
+Before asking questions, do a quick background check: skim relevant repo files using Read/Glob/Grep, and if external context is needed, run a web search if available.
+
 Use the AskUserQuestion tool to ask focused questions. Ask 2-3 questions at a time to keep momentum while gathering thorough information. Cover these areas:
 
 ### 1. Scope & Goals

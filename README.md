@@ -1,17 +1,15 @@
 # Claude Settings
 
-This repository contains my Claude Code settings, commands, and skills.
+This repository contains my Claude Code settings and skills.
 
 ## Structure
 
-- `commands/` - Custom slash commands (legacy, now merged into skills)
-- `skills/` - Custom skills
+- `skills/` - Custom skills (invocable via `/skill-name`)
 - `settings.json` - Plugin and feature settings
 
 ## Setup
 
 These settings are symlinked from `~/.claude/` to this repository:
-- `~/.claude/commands` → `~/claude/commands`
 - `~/.claude/skills` → `~/claude/skills`
 - `~/.claude/settings.json` → `~/claude/settings.json`
 - `~/.claude/settings.local.json` → `~/claude/settings.local.json`
@@ -26,7 +24,7 @@ Project-specific `claude.md` files remain in their respective project directorie
 
 Skills are modular capabilities that extend Claude's functionality. Each skill is a folder containing a `SKILL.md` file with instructions, plus optional supporting files like scripts and templates.
 
-> **Note:** Custom slash commands have been merged into skills. A file at `.claude/commands/review.md` and a skill at `.claude/skills/review/SKILL.md` both create `/review` and work the same way.
+> All slash commands live as skills. Each skill directory contains a `SKILL.md` and becomes invocable via `/skill-name`.
 
 ### Skill Structure
 
