@@ -4,7 +4,7 @@ description: Run a discovery interview to gather requirements before planning a 
 disable-model-invocation: true
 user-invocable: true
 argument-hint: "[feature description]"
-allowed-tools: AskUserQuestion, Read, Glob, Grep
+allowed-tools: AskUserQuestion, Read, Glob, Grep, WebSearch, WebFetch
 ---
 
 You are conducting a discovery interview to gather requirements before implementation planning.
@@ -12,6 +12,8 @@ You are conducting a discovery interview to gather requirements before implement
 The user wants to implement: $ARGUMENTS
 
 ## Interview Process
+
+Before asking questions, explore the codebase thoroughly to understand the existing architecture, patterns, and relevant code areas. If the feature involves external libraries, APIs, or concepts you need more context on, run web searches to inform your questions.
 
 Use the AskUserQuestion tool to ask focused questions. Ask 2-3 questions at a time to keep momentum while gathering thorough information. Cover these areas:
 

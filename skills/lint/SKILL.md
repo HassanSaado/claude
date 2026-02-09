@@ -1,3 +1,12 @@
+---
+name: lint
+description: Run all code quality checks for the current project including linting, formatting, and type checking. Supports Node.js, Python, Go, and Rust.
+disable-model-invocation: true
+user-invocable: true
+argument-hint: "[--fix]"
+allowed-tools: Bash
+---
+
 # Lint
 
 Run all code quality checks for the current project: linting, formatting, and type checking.
